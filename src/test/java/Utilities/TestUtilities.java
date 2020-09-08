@@ -67,4 +67,8 @@ public class TestUtilities {
         labsOfSP.add("Padrão Ribeirão");
         return labsOfSP;
     }
+
+    public void killBrowser(int browser){
+        DriverFactory.getDriver(browser).quit();
+    }
 }
